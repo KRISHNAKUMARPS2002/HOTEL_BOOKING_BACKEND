@@ -1,30 +1,40 @@
-# OS or editor generated files
+# macOS system files
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
 Thumbs.db
+Desktop.ini
 
-# Compiled binary files
-*.com
+# IDE and editor files
+.idea/
+.vscode/
+
+# Dependency directories
+node_modules/
+venv/
+virtualenv/
+target/
+
+# Compiled files
 *.class
-*.dll
-*.exe
 *.o
-*.so
+*.obj
+*.pyc
+*.pyo
+*.pyd
+*.js
+*.js.map
 
-# Libraries
-*.jar
-*.war
-*.ear
-
-# Package files
-*.7z
-*.dmg
-*.gz
-*.iso
-*.rar
-*.tar
-*.zip
-
-# Logs and databases
+# Logs and temporary files
 *.log
-*.sql
-*.sqlite
+temp/
+tmp/
+
+# Configuration files
+config/
+.gitignore
+
+# Allow index.js
+!index.js
