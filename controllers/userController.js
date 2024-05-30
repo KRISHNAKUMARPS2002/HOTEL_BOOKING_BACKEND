@@ -16,6 +16,8 @@ exports.register = async (req, res) => {
     user = new User({ username, email, password });
     await user.save();
 
+    console.log(`User registered successfully: ${username}, ${email}`);
+
     const payload = { user: { id: user.id, role: user.role } };
     jwt.sign(
       payload,
@@ -41,6 +43,8 @@ exports.login = async (req, res) => {
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) return res.status(400).send("Invalid Credentials");
+
+    console.log(`User logged in successfully: ${email}`);
 
     const payload = { user: { id: user.id, role: user.role } };
     jwt.sign(
