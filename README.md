@@ -142,5 +142,4 @@ curl -X POST http://localhost:3000/api/hotels \
         "location": "New York",
         "rating": 5
       }'
-```
-```
+
