@@ -1,0 +1,30 @@
+# OS or editor generated files
+.DS_Store
+Thumbs.db
+
+# Compiled binary files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Libraries
+*.jar
+*.war
+*.ear
+
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
