@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "4379000000007055",
+      "name": "hotelbooking",
+      "domain": {
+        "id": "50019628717",
+        "name": "hotelbooking-60029821418.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60029821418",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
