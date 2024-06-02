@@ -8,9 +8,8 @@ dotenv.config();
 const connectDB = async () => {
   try {
     await mongoose.connect(process.env.MONGODB_URI, {
-      // Remove useNewUrlParser and useUnifiedTopology
-      // These options are deprecated in MongoDB Node.js Driver version 4.0.0 and later
-      // They are no longer needed and will be removed in the next major version
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
     });
     console.log("MongoDB connected successfully");
   } catch (error) {
