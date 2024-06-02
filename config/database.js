@@ -7,7 +7,7 @@ dotenv.config();
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb://localhost:27017/hotel_booking', {
+    await mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
