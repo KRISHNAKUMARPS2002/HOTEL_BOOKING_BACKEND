@@ -36,5 +36,5 @@ tmp/
 config/
 .gitignore
 
-# # Allow index.js
-# !index.js
+# # Allow app.js
+# !app.js
